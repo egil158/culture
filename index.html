@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Rethinking Human Culture: Cognitive Mechanisms and Cross-Species Continuities">
+  <meta name="keywords"
+    content="Social Cogniton, Human Cognition, Cognitive Science, Culture, Mindreading, Power, Status">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rethinking Human Culture: Cognitive Mechanisms and Cross-Species Continuities</title>
+
+  <!-- Open Graph for LinkedIn/Facebook -->
+  <meta property="og:title" content="Rethinking Human Culture: Cognitive Mechanisms and Cross-Species Continuities">
+  <meta property="og:description"
+    content="Full paper, key figures, and interactive framework reframing social cognition as status recognition and power navigation.">
+  <meta property="og:image" content="https://egil158.github.io/social_cog/static/images/ToM.png">
+  <meta property="og:url" content="https://egil158.github.io/social_cog/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rethinking Human Culture: Cognitive Mechanisms and Cross-Species Continuities">
+  <meta name="twitter:description"
+    content="Full paper, key figures, and interactive framework reframing social cognition as status recognition and power navigation.">
+  <meta name="twitter:image" content="https://egil158.github.io/social_cog/static/images/ToM.png">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://hypernerf.github.io">
+            HyperNeRF
+          </a>
+          <a class="navbar-item" href="https://nerfies.github.io">
+            Nerfies
+          </a>
+          <a class="navbar-item" href="https://latentfusion.github.io">
+            LatentFusion
+          </a>
+          <a class="navbar-item" href="https://photoshape.github.io">
+            PhotoShape
+          </a>
+        </div>
+      </div> 
+    </div> -->
+
+  </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">Rethinking Human Culture: Cognitive Mechanisms and Cross-Species
+              Continuities</h1>
+
+            <!-- <h2 class="subtitle is-4 has-text-grey">
+              Survey Paper
+            </h2> -->
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://egil158.github.io/" target="_blank" rel="noopener noreferrer">Egil Diau</a>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>National Taiwan University</span>
+              <!-- <span class="author-block"><sup>2</sup>Google Research</span> -->
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="./static/pdf/Rethinking_Human_Culture.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://zenodo.org/records/16788810"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>Zenodo</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+                <!-- Code Link. -->
+                <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video> -->
+        <img src="./static/images/culture.png" alt="Project teaser"
+          style="width: 400px; height: 400px; object-fit: cover; border-radius: 24px; display: block; margin: 0 auto 2rem;">
+        <h2 class="subtitle has-text-centered">
+          <span style="font-weight: 900; font-size: 1.1em; letter-spacing: 0.5px;">TL/DR:</span>
+          &nbsp; Culture isn’t uniquely human. Chimpanzees and orcas show rich cultural behaviour, yet traditional
+          theories frame culture as symbolic, human-only, and vague. We replace this with a unified, testable framework
+          that explains stability, variation, and complexity across all cultural systems, grounded in two continuous
+          cognitive spectra.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+
+        <div class="columns is-centered is-variable is-6">
+
+          <!-- Card 1: Chimp -->
+          <div class="column has-text-centered">
+            <img src="./static/images/chimp.png" alt="Animal"
+              style="width: 100%; max-width: 300px; border-radius: 12px; margin-bottom: 1rem;">
+            <p><strong>Chimpanzee Culture</strong><br> From teaching tool use, to hunting techniques and complex social
+              customs — passed down through generations.
+            </p>
+          </div>
+
+          <!-- Card 2: Orca -->
+          <div class="column has-text-centered">
+            <img src="./static/images/orca.png" alt="Chimp"
+              style="width: 100%; max-width: 300px; border-radius: 12px; margin-bottom: 1rem;">
+            <p><strong>Orca Culture</strong><br> From teaching young to hunt, to unique vocal dialects and
+              shared group customs — passed down through generations.
+            </p>
+          </div>
+
+          <!-- Card 3: Human -->
+          <div class="column has-text-centered">
+            <img src="./static/images/human.png" alt="Human"
+              style="width: 100%; max-width: 300px; border-radius: 12px; margin-bottom: 1rem;">
+            <p><strong>Human Culture</strong><br> From shared meals to music, festivals, and rituals —
+              passed down through generations.
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Why Culture Need Rethinking</h2>
+          <div class="content has-text-justified">
+            <p>
+              For decades, culture has been treated as a uniquely human, symbolic construct—an abstract container for
+              language, art, and traditions.
+            </p>
+            <p>
+              This framing hides the fact that many cultural behaviors are grounded in
+              general cognitive abilities shared across species. Orcas teach their young, maintain distinct vocal
+              dialects, and follow group customs. Chimpanzees pass down hunting strategies, tool use, and complex social
+              norms.
+            </p>
+            <p>
+              By redefining culture as socially learned group behavior transmitted and maintained across time, we
+              gain a framework
+              that is mechanistic, testable, and comparable across species—revealing culture as a biological continuum
+              rather than a uniquely human.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Culture is often portrayed as a uniquely human hallmark, framed in symbolic and interpretive terms that
+              lack mechanistic grounding and allow the concept to encompass almost anything. However, the species with
+              the most cognitively elaborate cultures outside humans—chimpanzees and orcas—show that culture is not a
+              human-exclusive construct, but a continuous process grounded in general cognitive scaffolds.
+            </p>
+            <p>
+              This
+              perspective calls for a definition that is precise enough to be mechanistically testable while unified
+              enough to apply universally across cultural phenomena. We therefore propose: culture is group behaviour
+              transmitted and maintained across time, supported by two continuous spectra of cognitive substrates: (1)
+              individual-level social learning, from simple imitation to explicit teaching, and (2) group-level
+              processes, from non-inferential matching to structured, intentional transmission.
+            </p>
+            <p>
+              We further show that
+              species with greater cognitive capacities occupy broader ranges on these spectra, engaging in more complex
+              and cognitively demanding cultural behaviours. This framework replaces symbolic assumptions with
+              mechanistic structure, offering a unified account of cultural stability, variation, and graded complexity
+              across contexts.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+      <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">3 Source Evidence</h2>
+        <div class="publication-video">
+          <img src="./static/images/chimp_main.png" alt="Project teaser" style="width:100%; max-width:720px; border-radius: 8px;">
+        </div>
+      </div>
+    </div> -->
+      <!--/ Paper video. -->
+
+      <!-- Paper video. -->
+      <!-- <div class="columns is-centered has-text-centered" style="margin-bottom: 2rem;"></div> -->
+      <div class="columns is-centered has-text-centered" style="overflow: visible;">
+        <div class="column is-full" style="overflow: visible;">
+          <h2 class="title is-3" style="margin-bottom: 1.5rem;">Culture Expands with Cognitive Capacity
+          </h2>
+          <div style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: visible;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        ">
+            <img src="./static/images/main.png" alt="Core Cognitive Diagram" style="
+              width: auto;
+              max-width: 70%;
+              height: auto;
+              border-radius: 0;
+              display: block;
+            ">
+          </div>
+        </div>
+      </div>
+      <!-- </div>   -->
+
+      <!-- <div class="columns is-centered has-text-centered" style="margin-bottom: 2rem;"></div> -->
+      <div class="columns is-centered has-text-centered" style="overflow: visible;">
+        <div class="column is-full" style="overflow: visible;">
+          <h2 class="title is-3" style="margin-bottom: 1.5rem;">From Symbolic to Mechanistic Culture
+          </h2>
+          <div style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: visible;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        ">
+            <img src="./static/images/compare.jpg" alt="Core Cognitive Diagram" style="
+              width: auto;
+              max-width: 70%;
+              height: auto;
+              border-radius: 0;
+              display: block;
+            ">
+          </div>
+        </div>
+      </div>
+      <!-- </div>   -->
+      <!--/ Paper video. -->
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Why It Matters?</h2>
+          <div class="content has-text-justified">
+            <p>
+              “Culture” has become a universal label—invoked to explain everything from political unrest to workplace
+              habits. But when a term can cover any outcome, it stops revealing where the real causes lie.
+            </p>
+            <p>
+              This
+              vagueness turns culture into a rhetorical tool rather than an analytical one, masking the specific
+              mechanisms that shape behavior.
+            </p>
+            <p>
+              By redefining culture as a universal, mechanistic process, we create a
+              framework that pinpoints where it operates, explains how it persists or changes, and makes it measurable
+              across contexts.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Implications</h2>
+          <div class="content has-text-justified">
+            <p>
+              By grounding high-level social functions in observable cognitive behavior, this survey opens a path toward
+              modeling society from the bottom up—using mechanisms, not metaphors.
+            </p>
+            <p>
+              This approach dissolves the artificial boundaries between disciplines like psychology, anthropology,
+              political science, and economics. What were once treated as separate domains of “mind,” “culture,” or
+              “institutions” can now be understood as structured expressions of the same underlying cognitive functions.
+            </p>
+            <p>
+              Rather than studying society through detached abstractions, we can begin treating it as a compositional
+              system—one that emerges from shared behavioral capacities across species. This reframing lays the
+              groundwork for a unified science of social cognition, grounded not in speculation, but in mechanism.
+            </p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Demo</h2>
+        <div class="publication-video">
+          <img src="./static/images/underconstruction.png" alt="Project teaser" style="width:100%; max-width:400px; border-radius: 8px;">
+        </div>
+      </div>
+    </div> -->
+
+    </div>
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+  <!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+  </div>
+</section> -->
+
+  <!-- <section class="section has-text-centered">
+    <h2 class="title is-4">Open to Feedback, Corrections, and Collaboration</h2>
+    <p>
+      This survey aims to reframe primate cognition as a functional foundation for understanding human behavior. While
+      every effort has been made to include key findings, some behavioral details may require correction or refinement.
+    </p>
+    <p>
+      If you work in primatology, comparative cognition, or related fields, I’d love to hear your thoughts—especially if
+      you're interested in contributing, clarifying specific cases, or extending this work.
+      Reach out via <a href="mailto:egil158@gmail.com">egil158@gmail.com</a>.
+    </p>
+  </section> -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <!-- <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div> -->
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered" style="font-size: 0.9rem; line-height: 1.6; margin-top: 1rem;">
+            <p>
+              Adapted from the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies template</a>. Licensed
+              under
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
