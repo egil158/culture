@@ -300,16 +300,107 @@
       </div>
       <!--/ Abstract. -->
 
-      <!-- Paper video. -->
-      <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">3 Source Evidence</h2>
-        <div class="publication-video">
-          <img src="./static/images/chimp_main.png" alt="Project teaser" style="width:100%; max-width:720px; border-radius: 8px;">
+      <section class="section">
+        <div class="container">
+          <div class="has-text-centered">
+            <h2 class="title is-3 mb-2">Definitive and Unified Definition of Culture</h2>
+            <!-- 移除下劃線：把這行整段刪掉或保留但不顯示 -->
+            <!-- <div class="underline mx-auto"></div> -->
+          </div>
+
+          <div class="columns is-variable is-6 is-vcentered is-centered mt-6">
+            <!-- CULTURE (單卡片置中) -->
+            <div class="column is-8-desktop is-10-tablet">
+              <div class="box def-card is-culture">
+                <header class="is-flex is-align-items-center is-justify-content-space-between mb-3">
+                  <div class="is-flex is-align-items-center">
+                    <!-- 小 icon 改成 🧭（文化＝群體導航/共同方位） -->
+                    <span class="def-icon" aria-hidden="true">🧭</span>
+                    <h3 class="title is-4 mb-0">Culture</h3>
+                  </div>
+                  <button class="button is-light is-small copy-btn"
+                    data-copy="Culture — the socially learned, shared constraints and defaults that coordinate behavior within a group, persisting across individuals and time.">
+                    Copy
+                  </button>
+                </header>
+
+                <p class="content mb-0">
+                  <strong>Culture</strong> — group behaviour transmitted and maintained across time.
+                </p>
+                <p class="tag is-light mt-3">Minimal & Unified</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div> -->
-      <!--/ Paper video. -->
+      </section>
+
+      <style>
+        /* 如果頁面還有 .underline 元素，強制隱藏（保險） */
+        .underline {
+          display: none !important;
+        }
+
+        /* 卡片強化：邊框、陰影與 hover 動畫 */
+        .def-card {
+          border: 1px solid rgba(0, 0, 0, .08);
+          transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+        }
+
+        .def-card:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 10px 24px rgba(0, 0, 0, .08);
+          border-color: rgba(0, 0, 0, .12);
+        }
+
+        .def-card .def-icon {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          margin-right: .65rem;
+          font-size: 18px;
+          background: rgba(108, 99, 255, .10);
+        }
+
+        /* Culture 專用色（柔和橙） */
+        .def-card.is-culture .def-icon {
+          background: rgba(255, 180, 100, .18);
+        }
+
+        /* 深色模式優化 */
+        @media (prefers-color-scheme: dark) {
+          .def-card {
+            border-color: rgba(255, 255, 255, .08);
+          }
+
+          .def-card:hover {
+            border-color: rgba(255, 255, 255, .16);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, .5);
+          }
+
+          .box.def-card {
+            background: rgba(255, 255, 255, .03);
+          }
+        }
+      </style>
+
+      <script>
+        // 一鍵複製定義
+        document.querySelectorAll('.copy-btn').forEach(btn => {
+          btn.addEventListener('click', async () => {
+            try {
+              await navigator.clipboard.writeText(btn.dataset.copy);
+              const original = btn.textContent;
+              btn.textContent = 'Copied';
+              setTimeout(() => btn.textContent = original, 1200);
+            } catch (e) {
+              alert('Copy failed');
+            }
+          });
+        });
+      </script>
 
       <!-- Paper video. -->
       <!-- <div class="columns is-centered has-text-centered" style="margin-bottom: 2rem;"></div> -->
