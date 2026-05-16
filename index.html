@@ -103,8 +103,9 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-2 publication-title">Rethinking Human Culture: Cognitive Mechanisms and Cross-Species
-              Continuities</h1>
+            <h1 class="title is-2 publication-title">The Mechanistic Foundation of Culture: A Dual-Spectrum Architecture
+              of
+              Behavioral Transmission</h1>
 
             <!-- <h2 class="subtitle is-4 has-text-grey">
               Survey Paper
@@ -124,7 +125,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="./static/pdf/Rethinking_Human_Culture.pdf"
+                  <a href="./static/pdf/Foundation_of_Culture.pdf"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -133,7 +134,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://zenodo.org/records/16788810"
+                  <a href="https://zenodo.org/records/20068453"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -505,36 +506,100 @@
         </div>
       </div>
 
-      <!-- <div class="columns is-centered has-text-centered">
+      <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Implications</h2>
-          <div class="content has-text-justified">
-            <p>
-              By grounding high-level social functions in observable cognitive behavior, this survey opens a path toward
-              modeling society from the bottom up—using mechanisms, not metaphors.
-            </p>
-            <p>
-              This approach dissolves the artificial boundaries between disciplines like psychology, anthropology,
-              political science, and economics. What were once treated as separate domains of “mind,” “culture,” or
-              “institutions” can now be understood as structured expressions of the same underlying cognitive functions.
-            </p>
-            <p>
-              Rather than studying society through detached abstractions, we can begin treating it as a compositional
-              system—one that emerges from shared behavioral capacities across species. This reframing lays the
-              groundwork for a unified science of social cognition, grounded not in speculation, but in mechanism.
-            </p>
+          <h2 class="title is-3">Cite This Work</h2>
+
+          <div class="box cite-box has-text-left">
+            <button class="button is-primary is-light is-rounded is-small cite-copy" data-target="cite-zenodo">
+              📋 Copy
+            </button>
+
+            <pre id="cite-zenodo"><code>@misc{diau_2026_20068453,
+  author       = {Diau, Egil},
+  title        = {The Mechanistic Foundation of Culture: A Dual-
+                   Spectrum Architecture of Behavioral Transmission
+                  },
+  month        = may,
+  year         = 2026,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.20068453},
+  url          = {https://doi.org/10.5281/zenodo.20068453},
+}</code></pre>
           </div>
         </div>
-      </div> -->
-
-      <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Demo</h2>
-        <div class="publication-video">
-          <img src="./static/images/underconstruction.png" alt="Project teaser" style="width:100%; max-width:400px; border-radius: 8px;">
-        </div>
       </div>
-    </div> -->
+
+      <style>
+        :root {
+          --cite-bg: #f7f7f9;
+          --cite-border: #e6e6ea;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          :root {
+            --cite-bg: #1f1f24;
+            --cite-border: #32323a;
+          }
+        }
+
+        .cite-box {
+          position: relative;
+          background: var(--cite-bg);
+          border: 1px solid var(--cite-border);
+          border-radius: 12px;
+          padding: 1.25rem 1.25rem 1rem;
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+          text-align: left;
+        }
+
+        .cite-box .cite-copy {
+          position: absolute;
+          top: .75rem;
+          right: .75rem;
+        }
+
+        .cite-box pre {
+          margin: 0;
+          padding: .5rem 0 0 0;
+          white-space: pre;
+          overflow-x: auto;
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+          font-size: 0.95rem;
+          line-height: 1.55;
+        }
+
+        .cite-box pre code {
+          background: transparent !important;
+        }
+      </style>
+
+      <script>
+        function copyBib(btn) {
+          const id = btn.getAttribute('data-target');
+          const el = document.getElementById(id);
+          const text = el ? el.innerText.trim() : '';
+          if (!text) return;
+
+          navigator.clipboard.writeText(text).then(() => {
+            const old = btn.innerHTML;
+            btn.innerHTML = "✅ Copied!";
+            btn.classList.remove("is-primary", "is-light");
+            btn.classList.add("is-success");
+            setTimeout(() => {
+              btn.innerHTML = old;
+              btn.classList.remove("is-success");
+              btn.classList.add("is-primary", "is-light");
+            }, 1500);
+          });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+          document.querySelectorAll('.cite-copy').forEach(btn => {
+            btn.addEventListener('click', () => copyBib(btn));
+          });
+        });
+      </script>
 
     </div>
 
